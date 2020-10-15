@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <meta charset="UTF-8"/>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Welcome to Advocado</title>
+      <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic" rel="stylesheet" type="text/css">
+      <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> -->
+  </head>
+  <body>
+
+    <div id="app"></div>
+
+    <!-- scripts and styles -->
+    {% style "/assets/bulma/css/bulma.min.css" %}
+    {% style "/assets/material-icons/css/material-icons.min.css" %}
+    {% style "/css/screen.css" %}
+
+    <script type="text/javascript">
+        var csrfToken = "{{csrf-token}}";
+    </script>
+    {% script "/js/app.js" %}
+  </body>
+</html>

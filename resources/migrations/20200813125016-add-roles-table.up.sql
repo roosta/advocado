@@ -1,0 +1,5 @@
+CREATE TABLE roles
+(role_id INT GENERATED ALWAYS AS IDENTITY,
+ name VARCHAR(6),
+ PRIMARY KEY(role_id)
+ );

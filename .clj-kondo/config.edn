@@ -1,0 +1,8 @@
+{:linters {:unused-namespace {:exclude [debux.cs.core debux.core advocado.figwheel
+                                        advocado.theme]}
+           :unused-referred-var {:exclude {debux.cs.core [clog dbg]
+                                           debux.core [dbg dbgn]
+                                           advocado.figwheel [start-fw stop-fw cljs]
+                                           advocado.core [start-app]}}
+           :unresolved-symbol {:exclude [(herb.core/defgroup)
+                                         (herb.core/defglobal)]}}}
